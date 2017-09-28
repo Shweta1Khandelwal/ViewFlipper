@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.iskylar.shweta.viewflipper.MainActivity">
+
+
+    <ViewFlipper
+        android:id="@+id/view_flipper"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="6dip" >
+
+        <!--  The child Views/Layout to flip -->
+
+        <!--  Layout 1 for 1st Screen -->
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Swipe left"
+                android:textColor="#191975"
+                android:textSize="25dp"
+                android:textStyle="bold" >
+            </TextView>
+
+            <ImageView
+                android:layout_marginTop="15dp"
+                android:id="@+id/imageView1"
+                android:layout_width="450dp"
+                android:layout_height="450dp"
+                android:src="@drawable/h" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Swipe right"
+                android:textColor="#191975"
+                android:textSize="25dp"
+                android:textStyle="bold" >
+            </TextView>
+
+            <ImageView
+                android:layout_marginTop="15dp"
+                android:id="@+id/imageView4"
+                android:layout_width="450dp"
+                android:layout_height="450dp"
+                android:src="@drawable/m" />
+
+        </LinearLayout>
+
+        <!--  Layout 2 for 2nd Screen -->
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Swipe left or right"
+                android:textColor="#191975"
+                android:textSize="25dp"
+                android:textStyle="bold" >
+            </TextView>
+
+            <ImageView
+                android:layout_marginTop="15dp"
+                android:id="@+id/imageView3"
+                android:layout_width="450dp"
+                android:layout_height="450dp"
+                android:src="@drawable/l" />
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Swipe left or right"
+                android:textColor="#191975"
+                android:textSize="25dp"
+                android:textStyle="bold" >
+            </TextView>
+
+            <ImageView
+                android:layout_marginTop="15dp"
+                android:id="@+id/imageView2"
+                android:layout_width="450dp"
+                android:layout_height="450dp"
+                android:src="@drawable/i" />
+
+        </LinearLayout>
+
+    </ViewFlipper>
+</LinearLayout>
